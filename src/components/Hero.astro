@@ -1,0 +1,25 @@
+---
+import Button from "./Button.astro";
+import Container from "./Container.astro";
+---
+
+<Container class="bg-linen">
+  <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+    <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+      <div class="text-left space-y-6 md:pl-20">
+        <h1>
+          <span class="text-3xl md:text-4xl uppercase tracking-[0.2em] text-green font-black block">
+            Caring For Parents
+          </span>
+          <span class="block text-3xl font-light">with medically complex children</span>
+        </h1>
+        <Button as="a" href="/services" style="outline">
+          <h2>Get Support</h2>
+        </Button>
+      </div>
+    </div>
+    <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+      <img src="/Hero.svg" width="100%" alt="Hero" />
+    </div>
+  </div>
+</Container>

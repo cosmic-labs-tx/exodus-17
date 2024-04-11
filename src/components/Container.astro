@@ -1,0 +1,13 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { cn } from "../utils";
+
+type Props = HTMLAttributes<"div">;
+const { class: className, ...rest } = Astro.props;
+---
+
+<div class={cn("mx-auto", className)} {...rest}>
+  <div class="px-6 md:px-14 xl:px-14">
+    <slot />
+  </div>
+</div>
